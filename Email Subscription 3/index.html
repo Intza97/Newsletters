@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="Newsletters">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title>Newsletters | Popup Subscription Form</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+         <!--==================== ICONOS ====================-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+
+  <body>
+    <div class="start-btn">
+      <a href="#">Ver Modal</a>
+   </div>
+   <div class="center modal-box">
+      <div class="fas fa-times"></div>
+      <div class="fas fa-envelope icon1"></div>
+      <header>¡No te pierdas nuestras actualizaciones!</header>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit, pers
+      </p>
+      <form action="">
+         <div class="fas fa-envelope icon2"></div>
+         <input type="email" required placeholder="abc@example.com">
+         <button>Suscribirse</button>
+      </form>
+      <div class="icons">
+         <i class="fab fa-facebook-f"></i>
+         <i class="fa-brands fa-x-twitter"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="fab fa-youtube"></i>
+      </div>
+   </div>
+   <!--==================== script ====================-->
+   <script>
+      $(document).ready(function(){
+        $('.start-btn').click(function(){
+          $('.modal-box').toggleClass("show-modal");
+          $('.start-btn').toggleClass("show-modal");
+        });
+        $('.fa-times').click(function(){
+          $('.modal-box').toggleClass("show-modal");
+          $('.start-btn').toggleClass("show-modal");
+        });
+      });
+   </script>
+  </body>
+</html>
